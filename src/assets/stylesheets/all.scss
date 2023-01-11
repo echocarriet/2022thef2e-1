@@ -1,0 +1,25 @@
+// 中英文設定不同字型,加入_variables $font-family-sans-serif
+@font-face {
+  font-family: custom-sans-serif;
+  src: local('Noto Sans TC'),
+    url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap') format('embedded-opentype');
+  unicode-range: U+4E00-9FFF;
+}
+@font-face {
+  font-family: custom-sans-serif;
+  src: local('PPMonument Extended'),
+    url('@/assets/stylesheets/fonts/PPMonumentExtended-Regular.otf')
+      format('opentype');
+      unicode-range: U+00-024F;
+}
+// Bootstrap 與客製樣式
+@import '~bootstrap/scss/functions';
+@import './heplers/variables';
+@import '~bootstrap/scss/maps';
+@import '~bootstrap/scss/mixins';
+@import './heplers/utilities';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/utilities/api';
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import './components/custom';
